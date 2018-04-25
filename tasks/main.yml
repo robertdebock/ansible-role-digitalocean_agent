@@ -28,6 +28,9 @@
   notify:
     - update apt cache
 
+- name: flush handlers
+  meta: flush_handlers
+
 - name: install software
   package:
     name: do-agent
