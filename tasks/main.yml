@@ -25,6 +25,8 @@
     dest: /etc/apt/sources.list.d/digitalocean-agent.list
   when:
     - ansible_pkg_mgr == "apt"
+  notify:
+    - update apt cache
 
 - name: install software
   package:
