@@ -46,16 +46,16 @@ This role has been tested against the following distributions and Ansible versio
 |archlinux|no|no|no|
 |centos-6|yes|yes|yes|
 |centos-7|yes|yes|yes|
-|debian-buster|yes|yes|yes|
-|debian-jessie|yes|yes|yes|
-|debian-stretch|yes|yes|yes|
+|debian-buster|no|no|no|
+|debian-jessie|no|no|no|
+|debian-stretch|no|no|no|
 |fedora-26|yes|yes|yes|
 |fedora-27|yes|yes|yes|
 |opensuse-42.2|no|no|no|
 |opensuse-42.3|no|no|no|
-|ubuntu-artful|no|yes|yes|
-|ubuntu-bionic|yes|yes|yes|
-|ubuntu-xenial|yes|yes|yes|
+|ubuntu-artful|no|no|no|
+|ubuntu-bionic|no|no|no|
+|ubuntu-xenial|no|no|no|
 
 Example Playbook
 ----------------
