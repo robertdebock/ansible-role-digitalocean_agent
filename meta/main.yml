@@ -21,9 +21,6 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
-    - name: OpenSUSE
-      versions:
-        - all
     - name: Ubuntu
       versions:
         - trusty
@@ -32,6 +29,8 @@ galaxy_info:
 
   galaxy_tags:
     - digitalocean
+    - digitalocean-agent
+    - do-agent
     - CentOS
     - Debian
     - Fedora
