@@ -1,0 +1,3 @@
+---
+# vars file for digitalocean-agent
+digitalocean_agent_gpgkey: https://repos.sonar.digitalocean.com/sonar-agent.asc
