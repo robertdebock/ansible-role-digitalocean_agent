@@ -49,8 +49,8 @@ This role has been tested against the following distributions and Ansible versio
 |debian-buster|no|no|no|
 |debian-jessie|no|no|no|
 |debian-stretch|no|no|no|
-|fedora-26|yes|yes|yes|
 |fedora-27|yes|yes|yes|
+|fedora-28|yes|yes|yes|
 |opensuse-42.2|no|no|no|
 |opensuse-42.3|no|no|no|
 |ubuntu-artful|no|no|no|
