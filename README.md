@@ -42,19 +42,19 @@ This role has been tested against the following distributions and Ansible versio
 
 |distribution|ansible 2.3|ansible 2.4|ansible 2.5|
 |------------|-----------|-----------|-----------|
-|alpine-3.6|no|no|no|
-|alpine-3.7|no|no|no|
+|alpine-latest|no|no|no|
+|alpine-edge|no|no|no|
 |archlinux|no|no|no|
 |centos-6|yes|yes|yes|
-|centos-7|yes|yes|yes|
-|debian-buster|no|no|no|
-|debian-stretch|no|no|no|
-|fedora-27|yes|yes|yes|
-|fedora-28|yes|yes|yes|
-|opensuse-42.2|no|no|no|
-|opensuse-42.3|no|no|no|
+|centos-latest|yes|yes|yes|
+|debian-stable|no|no|no|
+|debian-latest|no|no|no|
+|fedora-latest|yes|yes|yes|
+|fedora-rawhide|yes|yes|yes|
+|opensuse-leap|no|no|no|
+|opensuse-tumbleweed|no|no|no|
 |ubuntu-artful|no|no|no|
-|ubuntu-bionic|no|no|no|
+|ubuntu-latest|no|no|no|
 
 Example Playbook
 ----------------
