@@ -31,10 +31,10 @@ galaxy_info:
     - digitalocean
     - digitalocean-agent
     - do-agent
-    - CentOS
-    - Debian
-    - Fedora
-    - RHEL
-    - Ubuntu
+    - centos
+    - debian
+    - fedora
+    - rhel
+    - ubuntu
 
 dependencies: []
