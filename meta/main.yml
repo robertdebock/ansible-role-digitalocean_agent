@@ -29,8 +29,8 @@ galaxy_info:
 
   galaxy_tags:
     - digitalocean
-    - digitalocean-agent
-    - do-agent
+    - digitaloceanagent
+    - doagent
     - centos
     - debian
     - fedora
