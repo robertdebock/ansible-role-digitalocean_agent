@@ -8,7 +8,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: roundcubemail-opensuse-tumbleweed
+  - name: digitalocean-opensuse-tumbleweed
     image: opensuse:tumbleweed
 provisioner:
   name: ansible

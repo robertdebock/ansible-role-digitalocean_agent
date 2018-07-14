@@ -8,7 +8,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: roundcubemail-debian-latest
+  - name: digitalocean-debian-latest
     image: debian:latest
 provisioner:
   name: ansible

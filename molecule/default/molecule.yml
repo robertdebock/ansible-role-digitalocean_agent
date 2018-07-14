@@ -8,43 +8,43 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: roundcubemail-archlinux
+  - name: digitalocean-archlinux
     image: base/archlinux
-  - name: roundcubemail-alpine-3.6
+  - name: digitalocean-alpine-3.6
     image: alpine:3.6
-  - name: roundcubemail-alpine-3.7
+  - name: digitalocean-alpine-3.7
     image: alpine:3.7
-  - name: roundcubemail-centos-6
+  - name: digitalocean-centos-6
     image: centos:6
-  - name: roundcubemail-centos-7
+  - name: digitalocean-centos-7
     image: centos:7
-  - name: roundcubemail-debian-buster
+  - name: digitalocean-debian-buster
     image: debian:buster
-  - name: roundcubemail-debian-jessie
+  - name: digitalocean-debian-jessie
     image: debian:jessie
-  - name: roundcubemail-debian-sid
+  - name: digitalocean-debian-sid
     image: debian:sid
-  - name: roundcubemail-debian-stretch
+  - name: digitalocean-debian-stretch
     image: debian:stretch
-  - name: roundcubemail-debian-wheezy
+  - name: digitalocean-debian-wheezy
     image: debian:wheezy
-  - name: roundcubemail-fedora-23
+  - name: digitalocean-fedora-23
     image: fedora:23
-  - name: roundcubemail-fedora-24
+  - name: digitalocean-fedora-24
     image: fedora:24
-  - name: roundcubemail-fedora-25
+  - name: digitalocean-fedora-25
     image: fedora:25
-  - name: roundcubemail-fedora-27
+  - name: digitalocean-fedora-27
     image: fedora:27
-  - name: roundcubemail-fedora-28
+  - name: digitalocean-fedora-28
     image: fedora:28
-  - name: roundcubemail-opensuse-42.2
+  - name: digitalocean-opensuse-42.2
     image: opensuse:42.2
-  - name: roundcubemail-opensuse-42.3
+  - name: digitalocean-opensuse-42.3
     image: opensuse:42.3
-  - name: roundcubemail-ubuntu-artful
+  - name: digitalocean-ubuntu-artful
     image: ubuntu:artful
-  - name: roundcubemail-ubuntu-bionic
+  - name: digitalocean-ubuntu-bionic
     image: ubuntu:bionic
 provisioner:
   name: ansible
