@@ -9,6 +9,7 @@
 - name: import apt key
   apt_key:
     url: "{{ digitalocean_agent_gpgkey }}"
+    state: present
   when:
     - ansible_pkg_mgr == "apt"
 
@@ -34,3 +35,4 @@
 - name: install software
   package:
     name: do-agent
+    state: present
