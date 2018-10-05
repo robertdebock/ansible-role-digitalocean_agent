@@ -32,7 +32,7 @@
 - name: flush handlers
   meta: flush_handlers
 
-- name: install software
+- name: install do-agent
   package:
     name: do-agent
     state: present
