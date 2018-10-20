@@ -30,8 +30,6 @@ platforms:
     image: fedora:latest
   - name: digitalocean-agent-fedora-rawhide
     image: fedora:rawhide
-  - name: digitalocean-agent-gentoo
-    image: gentoo/stage3-amd64
   - name: digitalocean-agent-opensuse-leap
     image: opensuse:leap
   - name: digitalocean-agent-opensuse-tumbleweed
