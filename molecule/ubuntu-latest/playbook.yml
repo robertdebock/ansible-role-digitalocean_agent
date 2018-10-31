@@ -5,5 +5,5 @@
   gather_facts: false
 
   roles:
-    - role: robertdebock.bootstrap
-    - role: ansible-role-digitalocean-agent
+    - robertdebock.bootstrap
+    - ansible-role-digitalocean-agent
