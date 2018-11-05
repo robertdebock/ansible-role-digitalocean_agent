@@ -3,8 +3,7 @@ digitalocean-agent
 
 [![Build Status](https://travis-ci.org/robertdebock/ansible-role-digitalocean-agent.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-digitalocean-agent)
 
-Installs the digitalocean-agent for your system to improve monitoring in Digital Ocean.
-
+The purpose of this role is to install digitalocean agent on your system.
 
 Example Playbook
 ----------------
