@@ -13,19 +13,14 @@
   when:
     - ansible_pkg_mgr == "apt"
 
-- name: install repository (yum)
+- name: install repository
   copy:
-    src: digitalocean-agent.repo
-    dest: /etc/yum.repos.d/digitalocean-agent.repo
+    src: "{{ digitalocean_agent_repository_src }}"
+    dest: "{{ digitalocean_agent_repository_dest }}"
   when:
-    - ansible_pkg_mgr == "yum" or ansible_pkg_mgr == "dnf"
-
-- name: install repository (apt)
-  copy:
-    src: digitalocean-agent.list
-    dest: /etc/apt/sources.list.d/digitalocean-agent.list
-  when:
-    - ansible_pkg_mgr == "apt"
+    - ansible_pkg_mgr == "yum" or
+      ansible_pkg_mgr == "dnf" or
+      ansible_pkg_mgr == "apt"
   notify:
     - update apt cache
 
