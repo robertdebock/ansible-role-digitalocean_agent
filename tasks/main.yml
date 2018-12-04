@@ -31,3 +31,6 @@
   package:
     name: do-agent
     state: present
+  register: digitalocean_agent_install_do_agent
+  until: digitalocean_agent_install_do_agent is succeeded
+  retries: 3
