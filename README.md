@@ -70,16 +70,16 @@ This role has been tested against the following distributions and Ansible versio
 |archlinux|no|no|no*|
 |centos-6|yes|yes|yes*|
 |centos-latest|yes|yes|yes*|
-|debian-latest|yes|yes|yes*|
-|debian-stable|yes|yes|yes*|
-|debian-unstable*|yes|yes|yes*|
+|debian-latest|no|no|no*|
+|debian-stable|no|no|no*|
+|debian-unstable*|no|no|no*|
 |fedora-latest|yes|yes|yes*|
 |fedora-rawhide*|yes|yes|yes*|
 |opensuse-leap|no|no|no*|
 |opensuse-tumbleweed|no|no|no*|
-|ubuntu-artful|yes|yes|yes*|
-|ubuntu-devel*|yes|yes|yes*|
-|ubuntu-latest|yes|yes|yes*|
+|ubuntu-artful|no|no|no*|
+|ubuntu-devel*|no|no|no*|
+|ubuntu-latest|no|no|no*|
 
 A single star means the build may fail, it's marked as an experimental build.
 
