@@ -34,8 +34,10 @@ platforms:
     image: opensuse:leap
   - name: digitalocean-agent-opensuse-tumbleweed
     image: opensuse:tumbleweed
-  - name: digitalocean-agent-ubuntu-artful
-    image: ubuntu:artful
+  - name: digitalocean-agent-ubuntu-latest
+    image: ubuntu:latest
+  - name: digitalocean_agent-ubuntu-rolling
+    image: ubuntu:rolling
   - name: digitalocean-agent-ubuntu-devel
     image: ubuntu:devel
   - name: digitalocean-agent-ubuntu-latest
