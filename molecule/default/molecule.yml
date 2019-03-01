@@ -32,8 +32,6 @@ platforms:
     image: fedora:rawhide
   - name: digitalocean-agent-opensuse-leap
     image: opensuse:leap
-  - name: digitalocean-agent-opensuse-tumbleweed
-    image: opensuse:tumbleweed
   - name: digitalocean-agent-ubuntu-latest
     image: ubuntu:latest
   - name: digitalocean_agent-ubuntu-rolling
