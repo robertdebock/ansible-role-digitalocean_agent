@@ -31,9 +31,6 @@ These variables are set in `defaults/main.yml`:
 ```yaml
 ---
 # defaults file for digitalocean-agent
-
-# To update all packages installed by this roles, set `digitalocean-agent_package_state` to `latest`.
-digitalocean-agent_package_state: present
 ```
 
 Requirements
