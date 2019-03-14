@@ -3,12 +3,12 @@ dependency:
   name: galaxy
   options:
     role-file: requirements.yml
-driver:
-  name: docker
 lint:
   name: yamllint
+driver:
+  name: docker
 platforms:
-  - name: digitalocean-archlinux
+  - name: digitalocean-agent-archlinux
     image: archlinux/base
 provisioner:
   name: ansible

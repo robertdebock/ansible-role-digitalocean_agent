@@ -3,12 +3,12 @@ dependency:
   name: galaxy
   options:
     role-file: requirements.yml
-driver:
-  name: docker
 lint:
   name: yamllint
+driver:
+  name: docker
 platforms:
-  - name: digitalocean-fedora-latest
+  - name: digitalocean-agent-fedora-latest
     image: fedora:latest
 provisioner:
   name: ansible
