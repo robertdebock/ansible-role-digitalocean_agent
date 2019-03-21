@@ -52,9 +52,6 @@ platforms:
   - name: digitalocean-agent-ubuntu-devel
     image: ubuntu:devel
     pre_build_image: yes
-  - name: digitalocean-agent-ubuntu-latest
-    image: ubuntu:latest
-    pre_build_image: yes
 provisioner:
   name: ansible
   playbooks:
