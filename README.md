@@ -6,6 +6,9 @@ digitalocean-agent
 
 Install digitalocean agent on your system.
 
+<img src="https://img.shields.io/ansible/role/d/"/>
+<img src="https://img.shields.io/ansible/quality/"/>
+
 Example Playbook
 ----------------
 
@@ -90,7 +93,7 @@ This role has been tested against the following distributions and Ansible versio
 |alpine-edge*|no|no|no*|
 |alpine-latest|no|no|no*|
 |archlinux|no|no|no*|
-|centos-6|yes|yes|yes*|
+|centos-7|yes|yes|yes*|
 |centos-latest|yes|yes|yes*|
 |debian-stable|no|no|no*|
 |debian-unstable*|no|no|no*|
