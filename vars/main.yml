@@ -2,6 +2,12 @@
 # vars file for digitalocean-agent
 digitalocean_agent_gpgkey: https://repos.sonar.digitalocean.com/sonar-agent.asc
 
+_digitalocean_agent_validate_certs:
+  default: yes
+  Debian: no
+
+digitalocean_agent_validate_certs: "{{ _digitalocean_agent_validate_certs[ansible_os_family] | default(_digitalocean_agent_validate_certs['default']) }}"
+
 _digitalocean_agent_repository_src:
   default: []
   apt: digitalocean-agent.list

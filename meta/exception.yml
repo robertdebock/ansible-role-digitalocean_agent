@@ -1,0 +1,6 @@
+---
+exceptions:
+  - variation: Alpine
+    reason: "do-agent (missing)"
+  - variation: Archlinux
+    reason: "target not found: do-agent"

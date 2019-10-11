@@ -12,6 +12,7 @@
 - name: import apt key
   apt_key:
     url: "{{ digitalocean_agent_gpgkey }}"
+    validate_certs: "{{ digitalocean_agent_validate_certs }}"
     state: present
   when:
     - ansible_pkg_mgr == "apt"
