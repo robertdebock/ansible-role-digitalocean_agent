@@ -4,3 +4,7 @@ exceptions:
     reason: "do-agent (missing)"
   - variation: Archlinux
     reason: "target not found: do-agent"
+  - variation: Debian
+    reason: "ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory"
+  - variation: Ubuntu
+    reason: "ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory"

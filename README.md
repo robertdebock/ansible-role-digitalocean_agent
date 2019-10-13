@@ -97,14 +97,14 @@ This role has been tested against the following distributions and Ansible versio
 |archlinux|no|no|no*|
 |centos-7|yes|yes|yes*|
 |centos-latest|yes|yes|yes*|
-|debian-stable|yes|yes|yes*|
-|debian-unstable*|yes|yes|yes*|
+|debian-stable|no|no|no*|
+|debian-unstable*|no|no|no*|
 |fedora-latest|yes|yes|yes*|
 |fedora-rawhide*|yes|yes|yes*|
 |opensuse-leap|no|no|no*|
-|ubuntu-devel*|yes|yes|yes*|
-|ubuntu-latest|yes|yes|yes*|
-|ubuntu-rolling|no|yes|yes*|
+|ubuntu-devel*|no|no|no*|
+|ubuntu-latest|no|no|no*|
+|ubuntu-rolling|no|no|no*|
 
 A single star means the build may fail, it's marked as an experimental build.
 
@@ -117,6 +117,8 @@ Some variarations of the build matrix do not work. These are the variations and 
 |---------------------------|------------------------|
 | Alpine | do-agent (missing) |
 | Archlinux | target not found: do-agent |
+| Debian | ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory |
+| Ubuntu | ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory |
 
 
 
