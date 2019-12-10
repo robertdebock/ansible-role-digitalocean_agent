@@ -2,17 +2,14 @@ digitalocean-agent
 =========
 
 <img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/>
-<a href="https://travis-ci.org/robertdebock/ansible-role-digitalocean-agent"><img src="https://travis-ci.org/robertdebock/ansible-role-digitalocean-agent.svg?branch=master" alt="Build status" align="left"/></a>
+<a href="https://travis-ci.org/robertdebock/ansible-role-digitalocean-agent"> <img src="https://travis-ci.org/robertdebock/ansible-role-digitalocean-agent.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/"/> <img src="https://img.shields.io/ansible/quality/"/>
 
 Install digitalocean agent on your system.
-
-<img src="https://img.shields.io/ansible/role/d/"/>
-<img src="https://img.shields.io/ansible/quality/"/>
 
 Example Playbook
 ----------------
 
-This example is taken from `molecule/resources/playbook.yml`:
+This example is taken from `molecule/resources/playbook.yml` and is tested on each push, pull request and release.
 ```yaml
 ---
 - name: Converge
@@ -24,7 +21,7 @@ This example is taken from `molecule/resources/playbook.yml`:
     - robertdebock.digitalocean-agent
 ```
 
-The machine you are running this on, may need to be prepared.
+The machine you are running this on, may need to be prepared, I use this playbook to ensure everything is in place to let the role work.
 ```yaml
 ---
 - name: Prepare
@@ -37,6 +34,7 @@ The machine you are running this on, may need to be prepared.
     - robertdebock.ca_certificates
     - robertdebock.apt_autostart
 ```
+
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
@@ -65,17 +63,6 @@ The following roles can be installed to ensure all requirements are met, using `
 
 ```
 
-This role uses the following modules:
-```yaml
----
-- apt
-- apt_key
-- copy
-- meta
-- package
-- rpm_key
-```
-
 Context
 -------
 
@@ -90,29 +77,16 @@ Compatibility
 
 This role has been tested on these [container images](https://hub.docker.com/):
 
-|container|allow_failures|
-|---------|--------------|
-|docker-alpine-openrc|yes|
-|docker-alpine-openrc|yes|
-|docker-centos-systemd|no|
-|docker-centos-systemd|no|
-|docker-debian-systemd|yes|
-|docker-debian-systemd|yes|
-|docker-debian-systemd|yes|
-|docker-fedora-systemd|yes|
-|docker-fedora-systemd|yes|
-|opensuse/|no|
-|docker-ubuntu-systemd|yes|
-|docker-ubuntu-systemd|yes|
-|docker-ubuntu-systemd|yes|
+|container|tags|
+|---------|----|
+|el|7, 8|
+|fedora|all|
 
-This role has been tested on these Ansible versions:
+The minimum version of Ansible required is 2.8 but tests have been done to:
 
-- ansible~=2.7
-- ansible~=2.8
-- git+https://github.com/ansible/ansible.git@devel
-
-The indicator '~=' means [compatible with](https://www.python.org/dev/peps/pep-0440/#compatible-release). For example 'ansible~=2.8' would pick the latest ansible-2.8, for example ansible-2.8.5.
+- The previous version, on version lower.
+- The current version.
+- The development version.
 
 Exceptions
 ----------
@@ -124,26 +98,44 @@ Some variarations of the build matrix do not work. These are the variations and 
 | Alpine | do-agent (missing) |
 | Archlinux | target not found: do-agent |
 | Debian | ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory |
+| Suse | No provider of '+do-agent |
 | Ubuntu | ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory |
-
 
 
 Testing
 -------
 
-[Unit tests](https://travis-ci.org/robertdebock/ansible-role-digitalocean-agent) are done on every commit and periodically.
+[Unit tests](https://travis-ci.org/robertdebock/ansible-role-digitalocean-agent) are done on every commit, pull request, release and periodically.
 
 If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-digitalocean-agent/issues)
 
-To test this role locally please use [Molecule](https://github.com/ansible/molecule):
+Testing is done using [Tox](https://tox.readthedocs.io/en/latest/) and [Molecule](https://github.com/ansible/molecule):
+
+[Tox](https://tox.readthedocs.io/en/latest/) tests multiple ansible versions.
+[Molecule](https://github.com/ansible/molecule) tests multiple distributions.
+
+To test using the defaults (any installed ansible version, namespace: `robertdebock`, image: `fedora`, tag: `latest`):
+
 ```
-pip install molecule
 molecule test
+
+# Or select a specific image:
+image=ubuntu molecule test
+# Or select a specific image and a specific tag:
+image="debian" tag="stable" tox
 ```
 
-To test on Amazon EC2, configure [~/.aws/credentials](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html) and set a region using `export AWS_REGION=eu-central-1` before running `molecule test --scenario-name ec2`.
+Or you can test multiple versions of Ansible, and select images:
+Tox allows multiple versions of Ansible to be tested. To run the default (namespace: `robertdebock`, image: `fedora`, tag: `latest`) tests:
 
-There are many specific scenarios available, please have a look in the `molecule/` directory.
+```
+tox
+
+# To run CentOS (namespace: `robertdebock`, tag: `latest`)
+image="centos" tox
+# Or customize more:
+image="debian" tag="stable" tox
+```
 
 License
 -------

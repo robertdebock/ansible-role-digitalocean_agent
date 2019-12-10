@@ -7,6 +7,6 @@ exceptions:
   - variation: Debian
     reason: "ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory"
   - variation: Suse
-    reaso: "No provider of '+do-agent"
+    reason: "No provider of '+do-agent"
   - variation: Ubuntu
     reason: "ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory"
