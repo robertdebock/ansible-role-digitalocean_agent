@@ -25,9 +25,7 @@
     src: "{{ digitalocean_agent_repository_src }}"
     dest: "{{ digitalocean_agent_repository_dest }}"
   when:
-    - ansible_pkg_mgr == "yum" or
-      ansible_pkg_mgr == "dnf" or
-      ansible_pkg_mgr == "apt"
+    - ansible_pkg_mgr in ["yum", "dnf", "apt"]
   notify:
     - update apt cache
 
