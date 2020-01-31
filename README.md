@@ -37,6 +37,32 @@ The machine you are running this on, may need to be prepared, I use this playboo
     - robertdebock.apt_autostart
 ```
 
+After running this role, this playbook runs to verify that everything works, this may be a good example how you can use this role.
+```yaml
+---
+- name: Verify
+  hosts: all
+  become: no
+  gather_facts: no
+
+  tasks:
+    - name: check /opt/digitalocean/bin/do-agent
+      stat:
+        path: /opt/digitalocean/bin/do-agent
+      register: check_do_agent
+
+    - name: collect service_facts
+      service_facts:
+      register: service_facts
+
+    - name: check conditions
+      assert:
+        that:
+          - check_do_agent.stat.exists
+          - check_do_agent.stat.executable
+          - services['do-agent.service'].state == "running"
+          - services['do-agent.service'].status == "enabled"
+```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
@@ -64,6 +90,7 @@ The following roles can be installed to ensure all requirements are met, using `
 - robertdebock.apt_autostart
 
 ```
+
 
 Context
 -------

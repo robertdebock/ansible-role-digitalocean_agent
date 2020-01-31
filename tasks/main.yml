@@ -39,3 +39,9 @@
   register: digitalocean_agent_install_do_agent
   until: digitalocean_agent_install_do_agent is succeeded
   retries: 3
+
+- name: start do-agent
+  service:
+    name: do-agent
+    state: started
+    enabled: true
