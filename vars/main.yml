@@ -1,6 +1,6 @@
 ---
 # vars file for digitalocean-agent
-digitalocean_agent_gpgkey: https://repos.sonar.digitalocean.com/sonar-agent.asc
+digitalocean_agent_gpgkey: "https://repos.insights.digitalocean.com/sonar-agent.asc"
 
 _digitalocean_agent_validate_certs:
   default: yes
