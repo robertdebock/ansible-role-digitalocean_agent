@@ -45,3 +45,23 @@
     name: do-agent
     state: started
     enabled: true
+
+- name: run systemctl
+  command: systemctl
+  changed_when: no
+  register: systemctl
+  tags:
+    - skip_ansible_lint
+
+- name: show systemctl
+  debug:
+    msg: "{{ systemctl }}"
+
+- name: run journalctl
+  command: journalctl
+  changed_when: no
+  register: journalctl
+
+- name: show journalclt
+  debug:
+    msg: "{{ journalclt }}"
