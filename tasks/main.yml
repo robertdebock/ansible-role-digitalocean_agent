@@ -47,7 +47,7 @@
     enabled: true
 
 - name: run systemctl
-  command: systemctl
+  command: systemctl status do-agent
   changed_when: no
   register: systemctl
   tags:
@@ -62,6 +62,6 @@
   changed_when: no
   register: journalctl
 
-- name: show journalclt
+- name: show journalctl
   debug:
-    msg: "{{ journalclt }}"
+    msg: "{{ journalctl }}"
