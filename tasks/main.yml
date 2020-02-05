@@ -49,6 +49,7 @@
 - name: run systemctl
   command: systemctl status do-agent
   changed_when: no
+  check_mode: no
   register: systemctl
   tags:
     - skip_ansible_lint
@@ -61,6 +62,7 @@
 - name: run journalctl
   command: journalctl
   changed_when: no
+  check_mode: no
   register: journalctl
   failed_when: no
 
