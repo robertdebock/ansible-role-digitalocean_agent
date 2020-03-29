@@ -1,7 +1,5 @@
-ARCHIVED - digitalocean-agent
+digitalocean-agent
 =============================
-
-NOTA BENE: This repository has been archived, no maintenance is being performed anymore.
 
 Install digitalocean agent on your system.
 
