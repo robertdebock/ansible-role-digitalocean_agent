@@ -29,9 +29,9 @@ The machine may need to be prepared using `molecule/resources/prepare.yml`:
   gather_facts: no
 
   roles:
-    - robertdebock.bootstrap
-    - robertdebock.ca_certificates
-    - robertdebock.apt_autostart
+    - role: robertdebock.bootstrap
+    - role: robertdebock.ca_certificates
+    - role: robertdebock.apt_autostart
 ```
 
 For verification `molecule/resources/verify.yml` run after the role has been applied.
