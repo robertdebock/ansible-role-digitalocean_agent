@@ -36,12 +36,14 @@ jobs:
             tag: "7"
           - image: "centos"
             tag: "latest"
+          - image: "debian"
+            tag: "latest"
           - image: "fedora"
             tag: "31"
           - image: "fedora"
             tag: "latest"
-          - image: "fedora"
-            tag: "rawhide"
+          - image: "ubuntu"
+            tag: "bionic"
     steps:
       - name: checkout
         uses: actions/checkout@v2
