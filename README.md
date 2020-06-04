@@ -2,9 +2,9 @@
 
 Install digitalocean agent on your system.
 
-|Travis|GitHub|Quality|Downloads|
-|------|------|-------|---------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-digitalocean-agent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-digitalocean-agent)|[![github](https://github.com/robertdebock/ansible-role-digitalocean-agent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-digitalocean-agent/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/digitalocean-agent)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/digitalocean-agent)|
+|Travis|GitHub|Quality|Downloads|Version|
+|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-digitalocean-agent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-digitalocean-agent)|[![github](https://github.com/robertdebock/ansible-role-digitalocean-agent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-digitalocean-agent/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/digitalocean-agent)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/digitalocean-agent)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-digitalocean-agent.svg)](https://github.com/robertdebock/ansible-role-digitalocean-agent/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -80,9 +80,9 @@ The following roles can be installed to ensure all requirements are met, using `
 
 ```yaml
 ---
+- robertdebock.apt_autostart
 - robertdebock.bootstrap
 - robertdebock.ca_certificates
-- robertdebock.apt_autostart
 
 ```
 
