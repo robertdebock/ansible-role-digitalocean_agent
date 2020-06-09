@@ -44,4 +44,4 @@
   service:
     name: do-agent
     state: started
-    enabled: true
+    enabled: yes
