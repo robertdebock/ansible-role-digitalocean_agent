@@ -48,28 +48,15 @@ For verification `molecule/resources/verify.yml` run after the role has been app
         path: /opt/digitalocean/bin/do-agent
       register: check_do_agent
 
-    - name: collect service_facts
-      service_facts:
-      register: service_facts
-
     - name: check conditions
       assert:
         that:
           - check_do_agent.stat.exists
           - check_do_agent.stat.executable
-          - services['do-agent.service'].state == "running"
-          - services['do-agent.service'].status == "enabled"
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
 
-## [Role Variables](#role-variables)
-
-These variables are set in `defaults/main.yml`:
-```yaml
----
-# defaults file for digitalocean-agent
-```
 
 ## [Requirements](#requirements)
 
