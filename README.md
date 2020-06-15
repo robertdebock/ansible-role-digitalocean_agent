@@ -86,7 +86,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 
 |container|tags|
 |---------|----|
-|el|7, 8|
+|el|7|
 |debian|buster|
 |fedora|31|
 |ubuntu|bionic|
@@ -103,11 +103,9 @@ Some variarations of the build matrix do not work. These are the variations and 
 
 | variation                 | reason                 |
 |---------------------------|------------------------|
-| Alpine | do-agent (missing) |
-| Archlinux | target not found: do-agent |
-| Debian | ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory |
-| Suse | No provider of '+do-agent |
-| Ubuntu | ln: failed to create symbolic link '/etc/systemd/system/multi-user.target.wants/do-agent.service': No such file or directory |
+| alpine | do-agent (missing) |
+| suse | No provider of '+do-agent |
+| centos:latest | rpm_key is not idempotent... |
 
 
 ## [Testing](#testing)
