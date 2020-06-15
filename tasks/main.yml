@@ -50,13 +50,13 @@
   command: systemctl status do-agent
   register: systemctl
   changed_when: no
-  faileD_when: no
+  failed_when: no
 
 - name: check journalctl
   command: journalctl -xe
   register: journalctl
   changed_when: no
-  faileD_when: no
+  failed_when: no
 
 - name: show stuff
   debug:
