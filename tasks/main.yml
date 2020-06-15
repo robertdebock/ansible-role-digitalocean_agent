@@ -45,3 +45,18 @@
     name: do-agent
     state: started
     enabled: yes
+
+- name: check systemctl
+  command: systemctl status do-agent
+  register: systemctl
+
+- name: check journalctl
+  command: journalctl -xe
+  register: journalctl
+
+- name: show stuff
+  debug:
+    var: "{{ item }}"
+  loop:
+    - "{{ systemctl }}"
+    - "{{ journalctl }}"
