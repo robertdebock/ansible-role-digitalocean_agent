@@ -86,10 +86,11 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 
 |container|tags|
 |---------|----|
+|amazon|2018.03|
 |el|7|
-|debian|buster|
-|fedora|31|
-|ubuntu|bionic|
+|debian|buster, bullseye|
+|fedora|31, 32|
+|ubuntu|focal, bionic|
 
 The minimum version of Ansible required is 2.8 but tests have been done to:
 
