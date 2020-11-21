@@ -9,9 +9,6 @@
       stat:
         path: /opt/digitalocean/bin/do-agent
       register: check_do_agent
-
-    - name: check conditions
-      assert:
-        that:
-          - check_do_agent.stat.exists
-          - check_do_agent.stat.executable
+      failed_when:
+        - not check_do_agent.stat.exists
+        - not check_do_agent.stat.executable
