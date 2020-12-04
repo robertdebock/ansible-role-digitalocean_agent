@@ -1,5 +1,6 @@
 ---
 # tasks file for digitalocean-agent
+
 - name: import rpm key
   rpm_key:
     key: "{{ digitalocean_agent_gpgkey }}"
