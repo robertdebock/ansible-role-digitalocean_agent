@@ -2,9 +2,9 @@
 
 Install digitalocean agent on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-digitalocean-agent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-digitalocean-agent)|[![github](https://github.com/robertdebock/ansible-role-digitalocean-agent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-digitalocean-agent/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/digitalocean-agent)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/digitalocean-agent)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-digitalocean-agent.svg)](https://github.com/robertdebock/ansible-role-digitalocean-agent/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-digitalocean-agent.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-digitalocean-agent)|[![github](https://github.com/robertdebock/ansible-role-digitalocean-agent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-digitalocean-agent/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-digitalocean-agent/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-digitalocean-agent)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/digitalocean-agent)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/digitalocean-agent)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-digitalocean-agent.svg)](https://github.com/robertdebock/ansible-role-digitalocean-agent/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
