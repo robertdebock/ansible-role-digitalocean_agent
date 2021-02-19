@@ -2,13 +2,13 @@
 # tasks file for digitalocean-agent
 
 - name: import rpm key
-  rpm_key:
+  ansible.builtin.rpm_key:
     key: "{{ digitalocean_agent_gpgkey }}"
   when:
     - ansible_pkg_mgr in [ "dnf", "yum" ]
 
 - name: import apt key
-  apt_key:
+  ansible.builtin.apt_key:
     url: "{{ digitalocean_agent_gpgkey }}"
     validate_certs: "{{ digitalocean_agent_validate_certs }}"
     state: present
@@ -16,7 +16,7 @@
     - ansible_pkg_mgr == "apt"
 
 - name: install repository
-  copy:
+  ansible.builtin.copy:
     src: "{{ digitalocean_agent_repository_src }}"
     dest: "{{ digitalocean_agent_repository_dest }}"
     mode: "0640"
@@ -26,15 +26,15 @@
     - update apt cache
 
 - name: flush handlers
-  meta: flush_handlers
+  ansible.builtin.meta: flush_handlers
 
 - name: install do-agent
-  package:
+  ansible.builtin.package:
     name: do-agent
     state: present
 
 - name: start do-agent
-  service:
+  ansible.builtin.service:
     name: do-agent
     state: started
     enabled: yes
