@@ -6,7 +6,7 @@
 
   tasks:
     - name: check /opt/digitalocean/bin/do-agent
-      stat:
+      ansible.builtin.stat:
         path: /opt/digitalocean/bin/do-agent
       register: check_do_agent
       failed_when:
