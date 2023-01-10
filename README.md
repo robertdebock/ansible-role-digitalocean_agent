@@ -18,7 +18,7 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
   gather_facts: yes
 
   roles:
-    - role: robertdebock.digitalocean-agent
+    - role: robertdebock.digitalocean_agent
 ```
 
 The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:

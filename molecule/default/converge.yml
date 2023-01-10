@@ -5,4 +5,4 @@
   gather_facts: yes
 
   roles:
-    - role: ansible-role-digitalocean-agent
+    - role: ansible-role-digitalocean_agent
