@@ -5,7 +5,7 @@
   gather_facts: no
 
   tasks:
-    - name: check /opt/digitalocean/bin/do-agent
+    - name: Check /opt/digitalocean/bin/do-agent
       ansible.builtin.stat:
         path: /opt/digitalocean/bin/do-agent
       register: check_do_agent
