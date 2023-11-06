@@ -2,9 +2,9 @@
 
 Install digitalocean agent on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-digitalocean_agent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-digitalocean_agent/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-digitalocean_agent/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-digitalocean_agent)|[![quality](https://img.shields.io/ansible/quality/26865)](https://galaxy.ansible.com/robertdebock/digitalocean_agent)|[![downloads](https://img.shields.io/ansible/role/d/26865)](https://galaxy.ansible.com/robertdebock/digitalocean_agent)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-digitalocean_agent.svg)](https://github.com/robertdebock/ansible-role-digitalocean_agent/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-digitalocean_agent/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-digitalocean_agent/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-digitalocean_agent/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-digitalocean_agent)|[![downloads](https://img.shields.io/ansible/role/d/24475)](https://galaxy.ansible.com/robertdebock/digitalocean_agent)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-digitalocean_agent.svg)](https://github.com/robertdebock/ansible-role-digitalocean_agent/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -78,7 +78,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-digitalocean_agent/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-digitalocean_agent/issues).
 
 ## [License](#license)
 
