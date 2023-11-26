@@ -1,4 +1,4 @@
-# Ansible role [digitalocean_agent](#digitalocean_agent)
+# [Ansible role digitalocean_agent](#digitalocean_agent)
 
 Install digitalocean agent on your system.
 
