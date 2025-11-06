@@ -5,4 +5,4 @@
 repository:
   description: Install digitalocean agent on your system.
   homepage: https://robertdebock.nl/
-  topics: digitalocean, digitaloceanagent, doagent, ansible, molecule, tox, playbook
+  topics: digitalocean, digitaloceanagent, doagent, ansible, molecule, playbook
