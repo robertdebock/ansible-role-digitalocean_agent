@@ -8,10 +8,11 @@
     - ansible_facts['pkg_mgr'] in [ "dnf", "yum", "dnf5" ]
 
 - name: Import apt key
-  ansible.builtin.apt_key:
+  ansible.builtin.get_url:
     url: "{{ digitalocean_agent_gpgkey }}"
     validate_certs: "{{ digitalocean_agent_validate_certs }}"
-    state: present
+    dest: /etc/apt/trusted.gpg.d/digitalocean_agent.asc
+    mode: "0644"
   when:
     - ansible_facts['pkg_mgr'] == "apt"
 
